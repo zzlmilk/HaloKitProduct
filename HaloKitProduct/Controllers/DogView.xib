@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DogView">
+            <rect key="frame" x="0.0" y="0.0" width="57" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="walk-head-circle2" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-EM-qrp">
+                    <rect key="frame" x="0.0" y="0.0" width="57" height="46"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="dog-head" translatesAutoresizingMaskIntoConstraints="NO" id="gYK-hT-rQ0">
+                    <rect key="frame" x="11" y="11" width="35" height="28"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dZY-EM-qrp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="OuG-GM-Ncq"/>
+                <constraint firstItem="dZY-EM-qrp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pcm-xc-sxE"/>
+                <constraint firstItem="dZY-EM-qrp" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Q5G-x7-349"/>
+                <constraint firstItem="gYK-hT-rQ0" firstAttribute="centerY" secondItem="dZY-EM-qrp" secondAttribute="centerY" constant="2" id="XDD-0v-v1y"/>
+                <constraint firstItem="dZY-EM-qrp" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="YqD-wH-wSQ"/>
+                <constraint firstItem="gYK-hT-rQ0" firstAttribute="centerX" secondItem="dZY-EM-qrp" secondAttribute="centerX" id="ieM-Mj-uEI"/>
+                <constraint firstItem="gYK-hT-rQ0" firstAttribute="height" secondItem="dZY-EM-qrp" secondAttribute="height" multiplier="0.6" id="q7X-Cw-vdN"/>
+                <constraint firstItem="gYK-hT-rQ0" firstAttribute="width" secondItem="dZY-EM-qrp" secondAttribute="width" multiplier="0.6" id="vsL-eR-u32"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="dZY-EM-qrp" id="jdB-6N-IhN"/>
+                <outlet property="headImageView" destination="gYK-hT-rQ0" id="ej9-8I-z48"/>
+            </connections>
+            <point key="canvasLocation" x="150.5" y="367"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dog-head" width="100" height="100"/>
+        <image name="walk-head-circle2" width="182" height="209"/>
+    </resources>
+</document>

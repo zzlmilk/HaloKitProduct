@@ -1,0 +1,6 @@
+framework module Pods_HaloKitProduct {
+  umbrella header "Pods-HaloKitProduct-umbrella.h"
+
+  export *
+  module * { export * }
+}

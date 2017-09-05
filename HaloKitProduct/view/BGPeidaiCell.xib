@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="BGPeidaiCell" customModule="HaloKitProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还没有宠物佩戴项圈快去选择吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-fz-bER">
+                        <rect key="frame" x="8" y="11" width="242" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-T5-7sF">
+                        <rect key="frame" x="237" y="8" width="67" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="67" id="vDy-uJ-oIy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="未佩戴">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="peidaiBtnAct:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sag-mF-s4f"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6i0-T5-7sF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1kd-mh-aAM"/>
+                    <constraint firstItem="Gta-fz-bER" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="50Z-JW-hUZ"/>
+                    <constraint firstItem="Gta-fz-bER" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5vn-K8-vyC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Gta-fz-bER" secondAttribute="bottom" constant="3.5" id="YT7-hw-KSx"/>
+                    <constraint firstItem="6i0-T5-7sF" firstAttribute="leading" secondItem="Gta-fz-bER" secondAttribute="trailing" constant="-13" id="jkr-hr-8xv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6i0-T5-7sF" secondAttribute="trailing" constant="8" id="u7L-u8-raV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desprictionLabel" destination="Gta-fz-bER" id="bRj-x2-iWC"/>
+                <outlet property="peidaiBtn" destination="6i0-T5-7sF" id="Qw7-RU-ytx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

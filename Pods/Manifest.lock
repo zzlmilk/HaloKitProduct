@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.3.4)
+  - CocoaAsyncSocket (7.6.1)
+  - Getui (1.6.2.0):
+    - Getui/Core (= 1.6.2.0)
+  - Getui/Core (1.6.2.0)
+  - HappyDNS (0.3.10)
+  - Qiniu (7.1.6):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BaiduMapKit (~> 3.3.4)
+  - CocoaAsyncSocket (~> 7.6.1)
+  - Getui (~> 1.6.2.0)
+  - Qiniu (~> 7.1.6)
+  - SDWebImage (~> 4.0.0)
+  - SnapKit (~> 3.2.0)
+  - SwiftyJSON (~> 3.1.4)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 6f2d76a04b72e9af938afb5ca0f97d4417bbf9c0
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  Getui: 8553aaecba3ded963c4715cbab88744731313c92
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  Qiniu: 8af94ce9b1611ed5f4350883e41d4a62cabad491
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 8dca9651f7850157437a69db8ad488b5f835055b
+
+COCOAPODS: 1.2.1
